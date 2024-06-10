@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color-purple: rgb(72, 0, 99);
+    --bg-color-lilac: rgb(178, 0, 138);
+    --bg-color-pink: rgb(253, 150, 169);
+    --bg-color-darkpink: rgb(244, 45, 172);
+    --bg-color-green: rgb(193, 201, 154);
+    --border-color-white: white solid 0.3rem;
+}
+
+nav {
+    height: 16vh;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+}
+
+.nav-section {
+    background-color: var(--bg-color-purple);
+    height: 11vh;
+    width: 11vh;
+    border-radius: 50%;
+}
+
+div.header-sections {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+div.header-sections section {
+    flex: 1; 
+    height: 12vh;
+    max-width: 30%;
+    background-color: var(--bg-color-lilac);
+    border-radius: 5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2rem 6rem;
+}
+
+div.main-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main section {
+    background-color: var(--bg-color-pink);
+    height: 22.5vh;
+    border: white solid .5rem;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    background-color: var(--bg-color-darkpink);
+    height: 15vh;
+    border: white solid .5rem;
+}
+
+footer {
+    background-color: var(--bg-color-green);
+    height: 16vh;
+    border: white solid 0.5rem;
+}
