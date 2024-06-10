@@ -5,11 +5,11 @@
 }
 
 :root {
-    --bg-color-purple: rgb(72,0,99);
-    --bg-color-lilac: rgb(178,0,138);
-    --bg-color-pink: rgb(253,150,169);
-    --bg-color-green: rgb(193,201,154);
-    --border-color-white: white solid .3rem;
+    --bg-color-purple: rgb(72, 0, 99);
+    --bg-color-lilac: rgb(178, 0, 138);
+    --bg-color-pink: rgb(253, 150, 169);
+    --bg-color-green: rgb(193, 201, 154);
+    --border-color-white: white solid 0.3rem;
 }
 
 header {
@@ -21,6 +21,7 @@ header {
 main {
     display: grid;
     grid-template-columns: 2fr 3fr 2fr;
+    background-color: white;
 }
 
 article {
@@ -37,16 +38,46 @@ section.five-elements {
     display: flex;
     flex-direction: column;
     border-left: var(--border-color-white);
+    border-right: var(--border-color-white);
 }
 
 aside {
     background-color: var(--bg-color-pink);
     height: 72.5vh;
-    border-right: var(--border-color-white);   
+    border-left: var(--border-color-white);
+    border-right: var(--border-color-white);
 }
 
 footer {
     background-color: var(--bg-color-green);
     height: 13.75vh;
     border: var(--border-color-white);
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 10vh;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        border-left: var(--border-color-white);
+        border-right: var(--border-color-white);
+    }
+
+    article {
+        height: 7vh;
+    }
+
+    section.empty-section {
+        height: 28vh;
+    }
+
+    aside {
+        height: 15vh;
+    }
+
+    footer {
+        height: 12vh;
+    }
 }
