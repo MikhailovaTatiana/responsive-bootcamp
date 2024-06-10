@@ -75,3 +75,51 @@ footer {
     height: 16vh;
     border: white solid 0.5rem;
 }
+
+@media screen and (max-width: 600px) {
+    nav {
+        justify-content: center;
+        padding: 0;
+        height: 12vh;
+    }
+    .nav-section {
+        height: 10vh;
+        width: 10vh;
+    }
+    div.header-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+    div.header-sections section {
+        flex: none;
+        height: 8.5vh;
+        max-width: none;
+        width: 100vw;
+        border: white solid .3rem;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    div.main-sections {
+        display: flex;
+        flex-direction: column;
+    }
+    main section {
+        height: 10vh;
+        border: 0;
+        border: white solid .4rem;
+    }
+    aside {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    article {
+        flex: 1;
+        height: 10vh;
+    }
+    footer {
+        height: 12.5vh;
+    }
+}
