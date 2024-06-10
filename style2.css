@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color-lilac: rgb(178, 0, 138);
+    --bg-color-pink: rgb(253, 150, 169);
+    --bg-color-green: rgb(193, 201, 154);
+    --border-color-white: white solid 0.3rem;
+}
+
+header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+    border-left: var(--border-color-white);
+}
+
+header section {
+    background-color: var(--bg-color-lilac);
+    height: 13.75vh;
+    border-right: var(--border-color-white);
+}
+
+main {
+    background-color: var(--bg-color-pink);
+    height: 72.5vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);border-top: var(--border-color-white);
+    border-left: var(--border-color-white);
+}
+main section {
+    bborder-top: var(--border-color-white);
+    border-right: var(--border-color-white);
+}
+
+
+footer {
+    background-color: var(--bg-color-green);
+    height: 13.75vh;
+    border: var(--border-color-white);
+}
