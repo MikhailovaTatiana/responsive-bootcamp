@@ -14,7 +14,7 @@
 header {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    
+    border-top: var(--border-color-white); 
     border-left: var(--border-color-white);
 }
 
@@ -28,11 +28,12 @@ main {
     background-color: var(--bg-color-pink);
     height: 72.5vh;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);border-top: var(--border-color-white);
+    grid-template-columns: repeat(3, 1fr);
     border-left: var(--border-color-white);
 }
+
 main section {
-    bborder-top: var(--border-color-white);
+    border-top: var(--border-color-white);
     border-right: var(--border-color-white);
 }
 
@@ -41,4 +42,27 @@ footer {
     background-color: var(--bg-color-green);
     height: 13.75vh;
     border: var(--border-color-white);
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    header section {
+        height: 9vh;
+    }
+    .mobile-border-top {
+        border-top: var(--border-color-white);
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        height: 69vh;
+    }
+    main section {
+        height: 23vh;
+    }
+    footer {
+        height: 12vh;
+    }
 }
