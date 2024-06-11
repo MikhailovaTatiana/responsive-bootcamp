@@ -1,0 +1,63 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color-purple: rgb(72, 0, 99);
+    --bg-color-lilac: rgb(178, 0, 138);
+    --bg-color-pink: rgb(253, 150, 169);
+    --bg-color-darkpink: rgb(244, 45, 172);
+    --bg-color-green: rgb(193, 201, 154);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    height: 18vh;
+    margin: 0 2rem;
+}
+
+header section {
+    background-color: var(--bg-color-purple);
+    height: 11vh;
+    width: 11vh;
+    border-radius: 50%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin: .5rem 2rem;
+}
+
+article {
+    background-color: var(--bg-color-lilac);
+    height: 20vh;
+}
+
+.another-color {
+    background-color: var(--bg-color-pink);
+    height: 20vh;
+}
+
+aside {
+    text-align: center;
+}
+
+button {
+    background-color: var(--bg-color-darkpink);
+    height: 9vh;
+    width: 25vw;
+    border: none;
+    border-radius: 5rem;
+    margin: 2rem 0;
+}
+
+footer {
+    background-color: var(--bg-color-green);
+    height: 15vh;
+    margin: .5rem;
+}
