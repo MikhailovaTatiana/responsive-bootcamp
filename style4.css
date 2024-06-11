@@ -40,7 +40,6 @@ article {
 
 .another-color {
     background-color: var(--bg-color-pink);
-    height: 20vh;
 }
 
 aside {
@@ -60,4 +59,32 @@ footer {
     background-color: var(--bg-color-green);
     height: 15vh;
     margin: .5rem;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        justify-content: center;
+        height: 14.5vh;
+        margin: .5rem;
+    }
+    main {
+        display: flex;
+        gap: .5rem;
+        height: 56vh;
+        flex-direction: column;
+        margin: .5rem;      
+    }
+    article {
+        flex: 1;
+        height: 14vh;
+    }
+    
+    button {
+        height: 9vh;
+        width: 40vw;
+        margin: 0;
+    }
+    footer {
+        height: 13vh;
+    }
 }
